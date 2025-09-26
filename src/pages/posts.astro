@@ -1,0 +1,12 @@
+---
+import PostContainer from "../components/PostContainer.astro";
+import Base from "../layouts/Base.astro";
+import { getCollection, getEntry } from "astro:content";
+const posts = (await getCollection("posts")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<Base title="Posts">
+  {posts.map((post, index) => <PostContainer post={post} position={index} />)}
+</Base>

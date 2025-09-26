@@ -1,0 +1,105 @@
+---
+import "../styles/global.css";
+import Head from "../components/Head.astro";
+import TopBar from "../components/TopBar.astro";
+import CoolParticles from "../components/CoolParticles.astro";
+const { title = "smallketchup82" } = Astro.props;
+const { date = null } = Astro.props;
+
+const anim = {
+  old: {
+    name: "bump",
+    duration: "1s",
+    easing: "ease-in-out",
+  },
+  new: {
+    name: "bump",
+    duration: "1s",
+    easing: "ease-in-out",
+    direction: "reverse",
+    delay: "1s",
+  },
+};
+
+const customTransition = {
+  forwards: anim,
+  backwards: anim,
+};
+---
+
+<!doctype html>
+<html lang="en" transition:name="root" transition:animate="none">
+  <Head title={title} />
+  <body
+    class="flex flex-col overflow-x-hidden overflow-y-auto bg-[#00012e] bg-fixed text-white"
+  >
+    <div id="tsparticles"></div>
+    <TopBar />
+    <main
+      class="mx-auto my-[2vh] box-border flex h-auto w-[90vw] flex-[1_0_auto] flex-col justify-between overflow-auto rounded-lg border border-solid border-black bg-[#2d2d2d] p-5 font-[Quicksand] text-lg shadow-[0_0_50px_rgb(45,45,45)] md:my-[5vh] md:w-[50vw] md:overflow-hidden md:p-10"
+      aria-label="Content"
+      transition:animate={customTransition}
+      transition:name="pagecontent"
+    >
+      <article>
+        <h1 class="text-center font-[Oxygen,_sans-serif] text-4xl text-white">
+          {Astro.props.titleov || Astro.props.title}
+        </h1>
+        {
+          date && (
+            <small class="float-right mb-1 text-sm opacity-50 select-none">
+              {date.toLocaleDateString("en-CA", {
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+                timeZone: "UTC",
+              })}
+            </small>
+          )
+        }
+        <hr class="my-2 w-full text-gray-400" />
+        <slot />
+      </article>
+      <small class="mt-auto self-end font-[Quicksand] opacity-25 select-none"
+        >&copy; smallketchup82 2025</small
+      >
+    </main>
+  </body><CoolParticles />
+
+  <!-- <editor-fold desc="ko-fi"> -->
+  <script
+    is:inline
+    data-astro-rerun
+    src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
+  ></script>
+
+  <script is:inline data-astro-rerun>
+    kofiWidgetOverlay.draw("smallketchup82", {
+      type: "floating-chat",
+      "floating-chat.donateButton.text": "",
+      "floating-chat.donateButton.background-color": "#000",
+      "floating-chat.donateButton.text-color": "#fff",
+    });
+  </script>
+  <!-- </editor-fold> -->
+</html>
+<style is:global>
+  @keyframes bump {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(25px);
+    }
+    75% {
+      opacity: 1;
+      transform: translateY(25px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+  }
+</style>

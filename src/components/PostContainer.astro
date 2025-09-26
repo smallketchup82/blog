@@ -1,0 +1,23 @@
+---
+const { post } = Astro.props;
+const { position = 0 } = Astro.props;
+---
+
+<div class="my-2">
+  {position > 0 && <hr class="my-2 w-full text-gray-400" />}
+  <small class="text-sm opacity-50 select-none"
+    >{
+      post.data.date.toLocaleDateString("en-CA", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+        timeZone: "UTC",
+      })
+    }</small
+  >
+  <br />
+  <a
+    href={`/posts/${post.id}`}
+    class="font-[Oxygen,_sans-serif] text-xl no-underline!">{post.data.title}</a
+  >
+</div>

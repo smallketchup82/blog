@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Global styles */
+a:not(nav a) {
+  @apply text-blue-500 underline hover:text-blue-700;
+}
