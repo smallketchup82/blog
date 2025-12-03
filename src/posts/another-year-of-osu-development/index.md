@@ -74,7 +74,7 @@ This isolation is discouraging. When you don't have your work acknowledged, not 
 I desire recognition, a simple "hey, good job, keep it up" would go a long way. I want *any* kind of indication that I'm on the right path, but my anxiety won't let me ask for it. I don't want to come off as [needy or annoying](/media/cooked.png). So, I keep my head down and work, hoping that one day my code will speak for itself. I don't ask non-essential questions. I don't ask for feedback. I don't ask when my PR's will be reviewed. I just wait. While my fear masks my enthusiasm, I hope my contributions show my dedication where words fail me.
 
 ### Moving Past It
-Despite the doubt, I push forward. Last year, my incompetence shielded me from these feelings; this year, I've had to face them head-on. I've had to accept that not every contribution will merge smoothly, and that I'm not perfect.
+Despite the doubts, I push forward. Last year, my incompetence shielded me from these feelings; this year, I've had to face them head-on. I've had to accept that not every contribution will merge smoothly, and that I'm not perfect.
 
 I constantly remind myself that I'm not doing this for a spot on the core team; I'm doing this for pure love of the game. I'm doing this to improve as a programmer, to gain experience, and to make osu! better. When in doubt, I remind myself that my worst failure was bricking the game with my Velopack PR. Had I quit then, lazer would never have gotten skin mounting, a beta channel, NVIDIA Reflex, or mobile haptics. So, I ignore the anxiety, improve my code, silently work toward my goals, and keep pushing.
 
