@@ -36,13 +36,7 @@ Compared to some of my other contributions, I actually didn't mind my implementa
 Even though I didn't get my specific code merged, I learnt something valuable. It’s not every day you get to A/B test your approach to open source contributions like that.
 
 ### Fun Side Project
-Remember how I said I was interested in other projects? I ended up working on a fun side project this year: a command-launcher esque [feature](https://discord.com/channels/188630481301012481/1097318920991559880/1299018881976762389) in lazer that allows you to quickly search for and switch skins with just a few keystrokes.
-
-It received a lot of positive feedback, and I was happy that my little experiment turned out well. Here's a video showcasing it:
-
-<video controls>
-  <source src="/media/osu-raycast.mp4" type="video/mp4">
-</video>
+Remember how I said I was interested in other projects? I ended up working on a fun side project this year: a command-launcher esque [feature](https://discord.com/channels/188630481301012481/1097318920991559880/1299018881976762389) in lazer that allows you to quickly search for and switch skins with just a few keystrokes. It received a lot of positive feedback, and I was happy that my little experiment turned out well. Here's a [video](https://youtu.be/g_hI77NGzHs) showcasing it.
 
 Despite peppy expressing interest in getting the feature in-game, I decided that a project meant to help me get comfortable with lazer's drawables and screen systems likely didn't have the polish required for a pull request. I didn't feel like putting in the effort to refactor it, so it started as a fun side project, and ended as one.
 
