@@ -2,7 +2,7 @@
   "autoPlay": true,
   "background": {
     "color": {
-      "value": "#00012e"
+      "value": "#000"
     },
     "opacity": 1
   },
@@ -46,7 +46,7 @@
       "enable": false
     },
     "color": {
-      "value": "#00ffff",
+      "value": "#fff",
       "animation": {
         "h": {
           "count": 0,
@@ -300,7 +300,7 @@
     "links": {
       "blink": false,
       "color": {
-        "value": "#00ffff"
+        "value": "#fff"
       },
       "consent": false,
       "distance": 150,

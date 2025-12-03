@@ -31,14 +31,13 @@ const customTransition = {
 <html lang="en" transition:name="root" transition:animate="none">
   <Head title={title} />
   <body
-    class="flex flex-col overflow-x-hidden overflow-y-auto bg-[#00012e] bg-fixed text-white"
+    class="flex flex-col overflow-x-hidden overflow-y-auto bg-[#000] bg-fixed text-white"
   >
     <div id="tsparticles"></div>
     <TopBar />
     <main
-      class="mx-auto my-[2vh] box-border flex h-auto w-[90vw] flex-[1_0_auto] flex-col justify-between overflow-auto rounded-lg border border-solid border-black bg-[#2d2d2d] p-5 font-[Quicksand] text-lg shadow-[0_0_50px_rgb(45,45,45)] md:my-[5vh] md:w-[50vw] md:overflow-hidden md:p-10"
+      class="mx-auto my-[2vh] box-border flex h-auto w-[90vw] flex-[1_0_auto] flex-col justify-between overflow-auto rounded-lg  bg-[#2d2d2d] p-5 font-[Quicksand] text-lg shadow-[0_0_50px_rgb(45,45,45)] md:my-[5vh] md:w-[50vw] md:overflow-hidden md:p-10"
       aria-label="Content"
-      transition:animate={customTransition}
       transition:name="pagecontent"
     >
       <article>
