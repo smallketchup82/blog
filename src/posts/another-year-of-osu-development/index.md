@@ -1,6 +1,7 @@
 ---
 title: Another Year of osu! Development
 date: 2025-12-03
+draft: true
 ---
 Hello wonderful internet people! I'm happy to announce that I've officially been working on osu! for another year now. I want to give a recap on what I've been up to, reflect on the past year, and share some plans for the future. But before I do so, I've got a quick announcement.
 
