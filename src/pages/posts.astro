@@ -2,7 +2,7 @@
 import PostContainer from "../components/PostContainer.astro";
 import Base from "../layouts/Base.astro";
 import { getCollection, getEntry } from "astro:content";
-const posts = (await getCollection("posts")).sort(
+const posts = (await getCollection("posts")).filter(post => !post.data.draft).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
 ---
