@@ -14,7 +14,7 @@
     "@astrojs/sitemap": "^3.7.2",
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^5.18.1",
-    "astro-particles": "github:tsparticles/astro#v2.10.0&path:/components/astro",
+    "astro-particles": "github:tsparticles/astro#path:/components/astro",
     "markdown-it": "^14.1.1",
     "sanitize-html": "^2.17.2",
     "sharp": "^0.34.5",

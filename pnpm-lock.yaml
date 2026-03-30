@@ -24,8 +24,8 @@ importers:
         specifier: ^5.18.1
         version: 5.18.1(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(sass@1.98.0)(typescript@5.8.3)
       astro-particles:
-        specifier: github:tsparticles/astro#v2.10.0&path:/components/astro
-        version: https://codeload.github.com/tsparticles/astro/tar.gz/d75413e67ef0d9659d4814885774fdd79832f5df#path:/components/astro
+        specifier: github:tsparticles/astro#path:/components/astro
+        version: https://codeload.github.com/tsparticles/astro/tar.gz/2aed0f2d0ed0eaa04fea6a8b43d1e0c5112b4cc7#path:/components/astro
       markdown-it:
         specifier: ^14.1.1
         version: 14.1.1
@@ -1001,8 +1001,8 @@ packages:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
 
-  astro-particles@https://codeload.github.com/tsparticles/astro/tar.gz/d75413e67ef0d9659d4814885774fdd79832f5df#path:/components/astro:
-    resolution: {path: /components/astro, tarball: https://codeload.github.com/tsparticles/astro/tar.gz/d75413e67ef0d9659d4814885774fdd79832f5df}
+  astro-particles@https://codeload.github.com/tsparticles/astro/tar.gz/2aed0f2d0ed0eaa04fea6a8b43d1e0c5112b4cc7#path:/components/astro:
+    resolution: {path: /components/astro, tarball: https://codeload.github.com/tsparticles/astro/tar.gz/2aed0f2d0ed0eaa04fea6a8b43d1e0c5112b4cc7}
     version: 2.10.0
 
   astro@5.18.1:
@@ -3217,7 +3217,7 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-particles@https://codeload.github.com/tsparticles/astro/tar.gz/d75413e67ef0d9659d4814885774fdd79832f5df#path:/components/astro:
+  astro-particles@https://codeload.github.com/tsparticles/astro/tar.gz/2aed0f2d0ed0eaa04fea6a8b43d1e0c5112b4cc7#path:/components/astro:
     dependencies:
       tsparticles-engine: 2.12.0
 
