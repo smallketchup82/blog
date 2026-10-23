@@ -29,7 +29,7 @@ const customTransition = {
 
 <!doctype html>
 <html lang="en" transition:name="root" transition:animate="none">
-  <Head title={title} />
+  <Head title={title} noindex={Astro.props.noindex} />
   <body
     class="flex flex-col overflow-x-hidden overflow-y-auto bg-[#000] bg-fixed text-white"
   >

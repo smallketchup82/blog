@@ -17,7 +17,7 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<Base title={post.data.title} date={post.data.date}>
+<Base title={post.data.title} date={post.data.date} noindex={post.data.unlisted}>
   <div class="prose prose-lg prose-invert max-w-none prose-code:before:hidden prose-code:after:hidden prose-headings:mt-3 prose-headings:mb-1 prose-p:leading-[1.5]">
     <Content />
   </div>
