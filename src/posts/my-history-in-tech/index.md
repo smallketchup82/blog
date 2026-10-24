@@ -149,7 +149,7 @@ A few messages later, before saying goodnight, I assured him:
 
 > i'll probs be able to figure things out if anything breaks
 
-Provided the first thing that broke wasn't my ability to leave the terminal, presumably.
+Assuming the first thing that breaks isn't my ability to leave the terminal.
 
 ### The Sudo Authorities
 
