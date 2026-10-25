@@ -1,7 +1,54 @@
 ---
 import Base from "../layouts/Base.astro";
+import ProjectOnebox from "../components/ProjectOnebox.astro";
+
+const projects = [
+  {
+    repo: "smallketchup82/TempFold",
+    title: "TempFold",
+    description: "Put a computer’s waste heat to use. An ESP32-C3 temperature sensor and a C# application pause or resume Folding@home to help keep a room at a comfortable temperature.",
+    language: "C# · ESP32",
+  },
+  {
+    repo: "smallketchup82/ZkInfraNeo",
+    title: "ZkInfraNeo",
+    description: "An experiment in building a modern Zero-K backend server from scratch, exploring networking, persistence, authentication, and server architecture. Still in research and development.",
+    language: "C# · PostgreSQL",
+    status: "Experimental",
+  },
+  {
+    repo: "ppy/osu",
+    title: "osu! contributions",
+    description: "Contributions and experiments for osu!lazer, including audio normalisation, NVIDIA Reflex, and a keyboard-driven skin switcher. Some changes have merged; others remain open or experimental.",
+    language: "C#",
+    status: "Open-source contributions",
+    contributions: true,
+  },
+  {
+    repo: "smallketchup82/javastockfish",
+    title: "JavaStockfish",
+    description: "A chess game written in Java, integrating Stockfish to play against the computer. Built as a school project while learning to connect an existing engine to a playable game.",
+    language: "Java · Stockfish",
+    status: "Archived",
+  },
+  {
+    repo: "smallketchup82/rezero-summarizer",
+    title: "Re:Zero summarizer",
+    description: "An AI-assisted chapter summarizer for the Re:Zero web novel. Created to help keep track of Arc 7’s events and characters while reading, with a downloader for processing the source chapters.",
+    language: "Python",
+    status: "Archived",
+  },
+];
 ---
 
 <Base title="Projects">
-  <p></p>
+  <p class="intro">A selection of things I’ve built and contributed to.</p>
+  <div class="projects">
+    {projects.map((project) => <ProjectOnebox {...project} />)}
+  </div>
 </Base>
+
+<style>
+  .intro { margin: 1.25rem 0; color: #ccc; font-size: 1rem; line-height: 1.6; }
+  .projects { display: grid; gap: 1.25rem; margin-bottom: 2rem; }
+</style>
